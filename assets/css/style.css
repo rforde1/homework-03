@@ -1,0 +1,34 @@
+h1{
+    color:#133a219e;
+}
+
+
+.primary-content{
+    background-color:lightgray;
+    margin-top:10%;
+    padding:10%;
+    text-align: center;
+    margin-bottom:10%;
+}
+
+.nav-style{
+    font-size: 33px;
+    background-color: gray;
+    padding: 18px;
+    border: 10px solid #133a219e;
+    border-radius: 25px;
+}
+
+.buttons{
+    margin-right:10px;
+
+}
+
+#display,
+#slider-length{
+    width:100%;
+}
+
+.buttons{
+    border-radius: 25px;
+}
