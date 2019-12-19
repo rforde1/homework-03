@@ -24,17 +24,24 @@
                 <br>
                 <input type="text" id="display">
                 <br>
-                <input type="range" min="0" max="50" name="slider" id="slider-length">
+                <input type="number" min="0" max="50" name="slider" id="number">
                 <br>
-                <button onclick="generate()" class="buttons">Generate</button>
-                <button onclick="myFunction()" class="buttons">Copy to clipboard</button>
-                <div id="length"></div>
+                    <div class="form-check">
+                        <input type="checkbox" id="numbers">Number <br>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="symbols">Symbol <br>
+                    </div>
+                    <div id="b-position">
+                    <button onclick="" class="buttons b-style" id="generate">Generate</button>
+                    <button onclick="copyFunction()" class="buttons b-style" id="copy">Copy to clipboard</button>
+                </div>
+                <br>
+                    <a href="https://rforde1.github.io/homework-02/portfolio.html" target="_blank" id="portfolio"> Back to Portfolio</a>
 
             </div>
 
         </div>
-
-    </div>
 
 
     </div>
