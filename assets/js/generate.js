@@ -6,14 +6,33 @@ var symbol = "!@#$%^&*()_:><?/";
 
 
 var generate = document.getElementById("generate");
-var numBox= document.getElementById("number");
-var symbolBox = document.getElementById("symbol");
+var passwordLength = document.getElementById('password-length')
 var yourPassword = document.getElementById("display");
 
 
 
 generate.addEventListener("click", function(e){
-   yourPassword.value = password(numBox.value, blank);
+   var numBox= document.getElementById("number").checked;
+   var symbolBox = document.getElementById("symbol").checked;
+   var blank = '';
+   if (numBox === true && symbolBox === true){
+      blank = char + num + symbol;
+
+   }
+   else if (numBox === true && symbolBox === false){
+      blank = char + num;
+   }
+   else if (symbolBox === true && numBox === false){
+      blank = char + symbol;
+   }
+   else{
+      blank = char;
+   }
+   console.log(blank)
+
+
+   yourPassword.value = password(passwordLength.value, blank);
+   // 
 }
 );
 
